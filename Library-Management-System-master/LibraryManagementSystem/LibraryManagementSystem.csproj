@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDA4979F-AF7B-498B-B544-69D3645D2061}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryManagementSystem</RootNamespace>
+    <AssemblyName>LibraryManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="BooKAddClass.cs" />
+    <Compile Include="BookDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookDetailsForm.Designer.cs">
+      <DependentUpon>BookDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookIssueDetailDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookIssueDetailDialog.Designer.cs">
+      <DependentUpon>BookIssueDetailDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookIssueDetails.cs" />
+    <Compile Include="BookIssueDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookIssueDetailsForm.Designer.cs">
+      <DependentUpon>BookIssueDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookIssueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookIssueForm.Designer.cs">
+      <DependentUpon>BookIssueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookSearchForm.Designer.cs">
+      <DependentUpon>BookSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentAddForm.Designer.cs">
+      <DependentUpon>DepartmentAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookAddForm.Designer.cs">
+      <DependentUpon>BookAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryDetails.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SessionAddAndSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionAddAndSearchForm.Designer.cs">
+      <DependentUpon>SessionAddAndSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SessionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SessionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentInsertForm.Designer.cs">
+      <DependentUpon>StudentInsertForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BookDetailsForm.resx">
+      <DependentUpon>BookDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookIssueDetailDialog.resx">
+      <DependentUpon>BookIssueDetailDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookIssueDetailsForm.resx">
+      <DependentUpon>BookIssueDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookIssueForm.resx">
+      <DependentUpon>BookIssueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookSearchForm.resx">
+      <DependentUpon>BookSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentAddForm.resx">
+      <DependentUpon>DepartmentAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookAddForm.resx">
+      <DependentUpon>BookAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionAddAndSearchForm.resx">
+      <DependentUpon>SessionAddAndSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInsertForm.resx">
+      <DependentUpon>StudentInsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SessionDataSet.xsc">
+      <DependentUpon>SessionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SessionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SessionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SessionDataSet.xss">
+      <DependentUpon>SessionDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metro-icon-right - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metro-icon-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metro-icon-first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metro-icon-last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436386534_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436386504_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436386564_resultset_first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436478790_resultset_previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436478826_resultset_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436386527_resultset_last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436386534_update1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436478882_magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\software_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422969301_application_link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1436478871_book_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseIcona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseIconb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close3a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeCloseIconb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-student-icon.png" />
+    <None Include="Resources\imagesLog.jpg" />
+    <None Include="Resources\library-management-system-1-638.jpg" />
+    <None Include="Resources\searchIcon.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\check_blue1.png" />
+    <Content Include="Resources\images.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
